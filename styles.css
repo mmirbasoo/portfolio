@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+#name {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    animation: bounce 2s infinite;
+  }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Roboto', san-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px; /* Set a max-width for the container */
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    font-style: italic;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+section h2 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.project, .experience {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Darker highlight on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+#resume {
+    margin: 40px 0;
+}
+
+#resume h2 {
+    text-align: left; /* Align the title to the left */
+}
+
+.resume-preview {
+    display: flex;
+    justify-content: center; /* Center the preview box */
+    text-decoration: none;
+    margin-top: 20px; /* Add some space between the title and the preview box */
+}
+
+.preview-box {
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.preview-box:hover {
+    transform: scale(1.05);
+}
+
+footer p {
+    margin: 0;
+}
+
+.photoITA {
+    text-align: center;
+    margin: 20px 0; /* Add space around the image */
+}
+
+.photoITA img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+    max-width: 300px; /* Set a maximum width */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.photoITA img:hover {
+    transform: scale(1.05);
+}
+
+.photoCSUN {
+    margin: 10px auto; /* Center the image and add spacing */
+    text-align: center; /* Ensure the image is centered */
+}
+
+.photoCSUN img {
+    max-width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for style */
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.photoCSUN img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.resume {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 300px; /* Set max width for the photo */
+}
+
+.Resume img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+}
+
+.Resume img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

@@ -1,0 +1,112 @@
+/* Global Font Style */
+body {
+    font-family: 'Roboto', san-serif;
+} 
+
+/* Project Section Styles */
+#project {
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column; /* Align all items vertically */
+    align-items: center; /* Center everything horizontally */
+}
+
+/* Project Photo Section (Centered) */
+#project-photo img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#project-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Project Description Boxes (Bubble Effect) */
+#project-description {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    gap: 30px; /* Space between bubbles */
+    padding: 0 20px;
+    width: 100%; /* Ensure it stretches across */
+    max-width: 1080px; /* Limit the width for readability */
+    margin-top: 20px;
+}
+
+/* Individual Description Box */
+.description-box {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners for bubble effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%; /* Stretch the boxes to take full width */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.description-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Box Titles */
+.description-box h2 {
+    margin-top: 0;
+    color: #bbb;
+    font-size: 1.5rem;
+}
+
+/* Box Text */
+.description-box p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #project-description {
+        max-width: 90%; /* Make boxes more fluid on smaller screens */
+    }
+}
+
+/* Back Button Styles */
+#back-button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 1rem;
+}
+
+#back-button a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ffcc00;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#back-button a:hover {
+    background-color: #e6b800;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    font-size: 16px;
+}
+
+p {
+    text-align: left;
+}
+
+ul, li {
+    text-align: left;
+    padding-left: 20px;
+}
